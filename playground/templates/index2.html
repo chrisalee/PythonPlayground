@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+        {# how to comment out in jinja #}
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='my_stylesheet_playgrounds.css') }}">
+    <title>Playground PY</title>
+
+</head>
+
+<body>
+
+    <div class = "box">1</div>
+
+    {% for row in range(number): %}
+    <div class ="playground">d    </div>
+    {% endfor %}
+
+    <h1>do it</h1>
+    
+    
+    {#    {% for row in range(rowNum): %}
+    <div class='row'>
+        {% for column in range(columnNum): %}
+            {% if((row+column)%2==0): %}
+            
+                <div class="color1 row"></div>
+            {% else %}
+                <div class="color2 row"></div>
+            {% endif %}
+        {% endfor %}
+    </div>    
+    {% endfor %}  #}
+
+
+</body>
+
+<footer>
+
+</footer>
+
+</html>
